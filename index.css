@@ -5,10 +5,11 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
   margin-top: 6em;
   margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .border {
@@ -80,6 +81,14 @@ body {
   transform-origin: 100% 100%;
 }
 
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5em;
+}
+
 @keyframes colorChange {
   0% {
     background: #ef476f;
@@ -109,11 +118,13 @@ body {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 415px) {
   .container {
+    font-size: x-small;
     margin-top: 4.5em;
   }
 }
+
 @media screen and (max-height: 415px) {
   .container {
     font-size: x-small;
@@ -125,10 +136,26 @@ body {
   }
   .border {
     width: 30em;
-    height: 26em;
+    height: 25em;
   }
   .frame {
     padding: 0 0;
     width: 100%;
+  }
+  footer {
+    height: 1.5em;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  .container {
+    font-size: x-small;
+  }
+  .border {
+    width: 30em;
+    height: 22em;
+  }
+  footer {
+    height: 1em;
   }
 }
