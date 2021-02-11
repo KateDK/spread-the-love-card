@@ -7,7 +7,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 3em;
+  margin-top: 6em;
   margin-bottom: 3em;
 }
 
@@ -106,5 +106,29 @@ body {
   }
   100% {
     transform: scale(0.95);
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .container {
+    margin-top: 4.5em;
+  }
+}
+@media screen and (max-height: 415px) {
+  .container {
+    font-size: x-small;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .border {
+    width: 30em;
+    height: 26em;
+  }
+  .frame {
+    padding: 0 0;
+    width: 100%;
   }
 }
