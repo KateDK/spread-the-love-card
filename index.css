@@ -2,7 +2,7 @@ body {
   background-color: #d84c6e;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   padding: 40px;
 }
 
@@ -47,12 +47,6 @@ body {
   margin-bottom: -30px;
 }
 
-/* #heart{
-    align-self: center;
-    font-size: 4em;
-    animation: pulse 3s infinite;
-} */
-
 #heart {
   align-self: center;
   animation: pulse 3s infinite;
@@ -75,11 +69,6 @@ body {
   animation: colorChange 4s infinite;
 }
 
-/* #heart::before{
-    animation: colorChange 3s infinite;
-    content: "❤️";
-}  */
-
 #heart:after {
   left: 0;
   transform: rotate(45deg);
@@ -87,12 +76,6 @@ body {
 }
 
 @keyframes colorChange {
-  /* 0% { content: "❤️"}
-  20% {content: "🧡"}
-  40% {content: "💛"}
-  60% {content: "💚"}
-  80% { content:"💙"}
-  100% { content: "❤️"} */
   0% {
     background: #ef476f;
   }
